@@ -942,6 +942,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .phase-grid {
+                grid-template-columns: 1fr !important;
+            }
+
             .about-grid {
                 grid-template-columns: 1fr;
             }
@@ -1055,7 +1059,7 @@
             </div>
 
             <!-- Phase tabs (visual only) -->
-            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border-bottom:0.5px solid var(--border);">
+            <div style="display:grid; grid-template-columns: repeat(3, 1fr); border-bottom:0.5px solid var(--border);">
 
                 <!-- Phase 1: HTML -->
                 <div style="padding:1.25rem 1.5rem; border-right:0.5px solid var(--border);">
@@ -1084,7 +1088,7 @@
                 </div>
 
                 <!-- Phase 3: CSS -->
-                <div style="padding:1.25rem 1.5rem; border-right:0.5px solid var(--border);">
+                <div style="padding:1.25rem 1.5rem;">
                     <div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:var(--blue); margin-bottom:0.5rem;">Phase 03</div>
                     <div style="font-size:15px; font-weight:600; color:var(--text); margin-bottom:0.75rem;">CSS — Styling &amp; Layouts</div>
                     <ul class="module-list">
@@ -1097,8 +1101,8 @@
                     </ul>
                 </div>
 
-                <!-- Phase 3: JavaScript -->
-                <div style="padding:1.25rem 1.5rem; border-right:0.5px solid var(--border);">
+                <!-- Phase 4: JavaScript -->
+                <div style="padding:1.25rem 1.5rem; border-right:0.5px solid var(--border); border-top:0.5px solid var(--border);">
                     <div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#f0c040; margin-bottom:0.5rem;">Phase 04</div>
                     <div style="font-size:15px; font-weight:600; color:var(--text); margin-bottom:0.75rem;">JavaScript — Making Things Work</div>
                     <ul class="module-list">
@@ -1112,7 +1116,7 @@
                 </div>
 
                 <!-- Phase 5: Python -->
-                <div style="padding:1.25rem 1.5rem; border-right:0.5px solid var(--border);">
+                <div style="padding:1.25rem 1.5rem; border-right:0.5px solid var(--border); border-top:0.5px solid var(--border);">
                     <div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:var(--green); margin-bottom:0.5rem;">Phase 05</div>
                     <div style="font-size:15px; font-weight:600; color:var(--text); margin-bottom:0.75rem;">Python — Deep &amp; Practical</div>
                     <ul class="module-list">
@@ -1130,7 +1134,7 @@
                 </div>
 
                 <!-- Phase 6: FastAPI -->
-                <div style="padding:1.25rem 1.5rem;">
+                <div style="padding:1.25rem 1.5rem; border-top:0.5px solid var(--border);">
                     <div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#00bfa5; margin-bottom:0.5rem;">Phase 06</div>
                     <div style="font-size:15px; font-weight:600; color:var(--text); margin-bottom:0.75rem;">FastAPI — Build Real APIs</div>
                     <ul class="module-list">
@@ -1193,7 +1197,7 @@
                             <div class="meta-icon">🧩</div>
                             <div>
                                 <div class="meta-text-label">Phases</div>
-                                <div class="meta-text-val">4 phases — HTML, CSS, JS, Python</div>
+                                <div class="meta-text-val">6 phases — HTML, Git, CSS, JS, Python, FastAPI</div>
                             </div>
                         </div>
                     </div>
@@ -1218,6 +1222,7 @@
                 <div class="coming-pill">N8n <span>→ Coming soon</span></div>
                 <div class="coming-pill">RAG Systems <span>→ Coming soon</span></div>
                 <div class="coming-pill">MCP &amp; Tool Calling <span>→ Coming soon</span></div>
+                <div class="coming-pill">LLM Evals <span>→ Coming soon</span></div>
                 <div class="coming-pill">CrewAI &amp; Multi-Agent <span>→ Coming soon</span></div>
             </div>
         </div>
@@ -1337,11 +1342,11 @@
         ═══════════════════════════════════════════════ -->
         <script>
             const certificates = {
-                "SHL-2026-001": {
-                    name: "Syed Umer",
-                    course: "Python for AI Engineering",
-                    date: "August 2026"
-                },
+                // "SHL-2026-001": {
+                //     name: "Syed Umer",
+                //     course: "AI Engineering Foundations",
+                //     date: "August 2026"
+                // },
                 // "SHL-2025-002": {
                 //     name: "Sara Noor",
                 //     course: "Python for AI Engineering",
